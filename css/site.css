@@ -216,6 +216,11 @@ main {
   text-underline-offset: 0.15em;
 }
 
+.doc .badge {
+  margin-top: 0.5rem;
+  padding-left: 0;
+}
+
 footer {
   display: flex;
   gap: 0.5rem;
