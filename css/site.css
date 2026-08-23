@@ -2,6 +2,7 @@
   --felt: #1f6b47;
   --ink: #f4f7f5;
   --ink-muted: rgba(244, 247, 245, 0.82);
+  color-scheme: dark;
 }
 
 *,
@@ -41,6 +42,29 @@ main {
   max-width: 28rem;
 }
 
+.page-doc {
+  align-items: stretch;
+}
+
+.page-doc header,
+.page-doc main,
+.page-doc footer {
+  width: 100%;
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.page-doc header {
+  margin-bottom: 1.75rem;
+}
+
+.page-doc main {
+  justify-content: flex-start;
+  align-items: stretch;
+  text-align: left;
+  max-width: 40rem;
+}
+
 .wordmark {
   margin: 0;
   font-size: 2.5rem;
@@ -61,8 +85,74 @@ main {
   color: var(--ink-muted);
 }
 
+.badge {
+  display: inline-block;
+  margin-top: 1.35rem;
+  padding: 10px;
+}
+
+.badge img {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+.still-gap {
+  margin: 1.75rem 0 0;
+  width: min(18rem, 72vw);
+  aspect-ratio: 9 / 19.5;
+  border-radius: 1.25rem;
+  border: 1px dashed rgba(244, 247, 245, 0.28);
+}
+
+.still {
+  margin: 1.75rem 0 0;
+  width: min(18rem, 72vw);
+}
+
+.still img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.25rem;
+}
+
 .home-link {
   margin-top: 1.25rem;
+  color: var(--ink);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.doc h1 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.doc h2 {
+  margin: 1.75rem 0 0.65rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.doc p,
+.doc li {
+  margin: 0 0 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.doc ul {
+  margin: 0 0 0.9rem;
+  padding-left: 1.25rem;
+}
+
+.doc a {
   color: var(--ink);
   font-weight: 500;
   text-decoration: underline;
@@ -75,6 +165,7 @@ footer {
   align-items: center;
   font-size: 0.95rem;
   font-weight: 500;
+  padding-top: 2rem;
 }
 
 footer a {
