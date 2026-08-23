@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Feltzee, classic five-dice scoring on iPhone</title>
+    <title>Feltzee: Free Yahtzee-Style Dice Game for iPhone: Offline, No Ads</title>
     <meta
       name="description"
-      content="Classic five-dice scoring on a green felt table. One screen, no account, no internet required."
+      content="Feltzee is a free classic dice game for iPhone and iPad. Roll five dice, fill the 13-box scorecard on green felt. No ads, no account, no wifi needed. 5.0★ on the App Store."
     />
     <link rel="canonical" href="https://feltzee.app/" />
     <link rel="icon" href="/assets/app-icon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/assets/app-icon.png" />
-    <meta name="theme-color" content="#1F6B47" />
+    <meta name="theme-color" content="#123F2A" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Feltzee" />
     <meta
       property="og:title"
-      content="Feltzee, classic five-dice scoring on iPhone"
+      content="Feltzee: Free Yahtzee-Style Dice Game for iPhone: Offline, No Ads"
     />
     <meta
       property="og:description"
-      content="Classic five-dice scoring on a green felt table. One screen, no account, no internet required."
+      content="Roll five dice, fill the 13-box scorecard on green felt. No ads, no account, no wifi needed. Free on the App Store."
     />
     <meta property="og:url" content="https://feltzee.app/" />
     <meta
@@ -32,11 +32,11 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Feltzee, classic five-dice scoring on iPhone"
+      content="Feltzee: Free Yahtzee-Style Dice Game for iPhone: Offline, No Ads"
     />
     <meta
       name="twitter:description"
-      content="Classic five-dice scoring on a green felt table. One screen, no account, no internet required."
+      content="Roll five dice, fill the 13-box scorecard on green felt. No ads, no account, no wifi needed. Free on the App Store."
     />
     <meta
       name="twitter:image"
@@ -47,73 +47,602 @@
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "Feltzee",
-        "description": "Classic five-dice scoring on a green felt table. One screen, no account, no internet required.",
-        "operatingSystem": "iOS",
+        "description": "Classic five-dice scoring on a green felt table. One screen, no scrolling. No account and no internet required to play.",
+        "operatingSystem": "iOS 17.0 or later",
         "applicationCategory": "GameApplication",
+        "applicationSubCategory": "Board",
         "offers": {
           "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
           "url": "https://apps.apple.com/app/id6800955678"
         },
-        "screenshot": "https://feltzee.app/assets/play-classic-felt.jpg"
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "ratingCount": "4",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Loren Davies"
+        },
+        "screenshot": [
+          "https://feltzee.app/assets/screenshots/iphone-1-play.png",
+          "https://feltzee.app/assets/screenshots/iphone-2-settings.png",
+          "https://feltzee.app/assets/screenshots/iphone-3-game-over.png",
+          "https://feltzee.app/assets/screenshots/iphone-4-high-scores.png"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you play a Yahtzee-style dice game?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Roll five dice up to three times per turn, holding any dice between rolls. After your final roll, score the dice in one of 13 boxes: Aces through Sixes on top, combinations like full house, straights, and five of a kind below. The game ends when all 13 boxes are filled."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the 13 boxes on a Yahtzee score sheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The upper section has six boxes (Aces, Twos, Threes, Fours, Fives, and Sixes) scoring the total of matching dice. The lower section has seven: 3 of a Kind, 4 of a Kind, Full House (25), Small Straight (30), Large Straight (40), 5 of a Kind (50), and Chance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good Yahtzee score?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A score over 250 is good for casual play, 300+ is excellent, and anything past 400 usually means multiple five-of-a-kinds. The theoretical maximum is 1,575. Landing the 35-point upper bonus is what most often separates a good game from an average one."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if you roll a second Yahtzee (five of a kind)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you already scored 50 in the five-of-a-kind box, each additional five of a kind earns a 100-point bonus, and you place the roll using the joker rules: fill the matching upper box first; if it is taken, use any open lower box at its fixed value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many points is a full house in Yahtzee?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A full house (three dice of one number and two of another) is always worth 25 points, no matter which numbers are showing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between a small straight and a large straight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A small straight is any sequence of four numbers (like 2-3-4-5) worth 30 points. A large straight is a sequence of all five dice (1-2-3-4-5 or 2-3-4-5-6) worth 40 points."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you get the 35-point bonus in Yahtzee?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Score at least 63 points across the six upper-section boxes, the equivalent of three dice of each number, and you earn a 35-point bonus. Feltzee tracks your progress toward 63 right on the scorecard."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best Yahtzee strategy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Prioritize the 35-point upper bonus by banking Fives and Sixes early, keep Chance as a safety net for bad turns, take zeros in Aces or the hardest boxes rather than wasting a good roll, and always chase a five of a kind when three matching dice appear early in a turn."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you play Yahtzee by yourself?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Solo play means chasing your own best score across the 13 boxes. Feltzee is built for it: it saves your game mid-turn, keeps a local top-10 high score list, and offers optional Game Center Daily and All Time leaderboards."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Feltzee work offline without wifi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Feltzee needs no internet connection to play, perfect for flights, subways, and dead zones. Game Center leaderboards are the only optional online feature."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Feltzee have ads or in-app purchases?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No ads, no paywalls, and no account. Feltzee is free, 5.5 MB, and collects no data. New felt tables unlock by scoring higher, not by paying."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can my family share one phone to play?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Feltzee is built for a shared family phone. Finished games save to a local top-10 with each player's name, so you can pass the phone around the table and compete for the house high score."
+            }
+          }
+        ]
       }
     </script>
     <link rel="stylesheet" href="/css/site.css" />
   </head>
   <body>
-    <div class="page page-home">
-      <main>
-        <h1 class="wordmark">Feltzee</h1>
-        <p class="tagline">Classic five-dice scoring on a green felt table.</p>
-        <a class="home-link" href="/play">How it plays</a>
-        <a
-          class="badge"
-          href="https://apps.apple.com/app/id6800955678"
-        >
-          <img
-            src="/assets/download-on-the-app-store.svg"
-            width="120"
-            height="40"
-            alt="Download on the App Store"
-          />
-        </a>
-        <figure class="still">
-          <img
-            src="/assets/play-classic-felt.jpg"
-            width="390"
-            height="844"
-            alt="A green felt table with five dice below a two-column scorecard."
-          />
-        </figure>
-        <section class="reviews" aria-labelledby="reviews-heading">
-          <h2 id="reviews-heading" class="reviews-heading">App Store reviews</h2>
-          <article class="review">
-            <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
-            <h3 class="review-title">Great game!</h3>
-            <p class="review-body">
-              This game is awesome! Super simple to pick up and actually fun to
-              play. 10/10 .. my new favorite app!
+    <div class="page page-landing">
+      <nav class="site-nav" aria-label="Main">
+        <div class="wrap">
+          <a class="nav-brand" href="/">
+            <img src="/assets/app-icon.png" width="30" height="30" alt="" />
+            Feltzee
+          </a>
+          <div class="nav-links">
+            <a href="#screenshots">Screenshots</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="/guides/">Guides</a>
+            <a href="#faq">FAQ</a>
+            <a
+              class="nav-cta"
+              href="https://apps.apple.com/app/id6800955678"
+              >Download Free</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <header class="hero">
+        <div class="wrap">
+          <div class="hero-copy">
+            <h1>The classic five-dice game. Free, offline, and&nbsp;ad-free.</h1>
+            <p class="hero-sub">
+              Feltzee is a Yahtzee-style dice game for iPhone and iPad. Roll,
+              hold, and fill the 13-box scorecard on a quiet green felt table.
+              No ads, no account, and no wifi required.
             </p>
-            <p class="review-name">Rachelsand27</p>
-          </article>
-          <article class="review">
-            <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
-            <h3 class="review-title">The best dice game!</h3>
-            <p class="review-body">
-              My family loves these types of games! I could play Feltzee all day
-              long. So much fun!! 10000/10!!
+            <p class="hero-proof">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <span>5.0 on the App Store</span>
             </p>
-            <p class="review-name">Laurgirlxo</p>
-          </article>
-        </section>
-      </main>
-      <footer>
-        <a href="/play">Play</a>
-        <span class="sep" aria-hidden="true">·</span>
-        <a href="/support">Support</a>
-        <span class="sep" aria-hidden="true">·</span>
-        <a href="/privacy">Privacy</a>
-        <span class="sep" aria-hidden="true">·</span>
-        <a href="/press-kit">Press Kit</a>
+            <div class="hero-actions">
+              <a class="badge" href="https://apps.apple.com/app/id6800955678">
+                <img
+                  src="/assets/download-on-the-app-store.svg"
+                  width="156"
+                  height="52"
+                  alt="Download Feltzee on the App Store"
+                />
+              </a>
+              <a class="hero-secondary" href="#how-it-works">See how it works</a>
+            </div>
+            <ul class="hero-points">
+              <li>No ads</li>
+              <li>No account</li>
+              <li>Works offline</li>
+              <li>5.5 MB</li>
+              <li>No data collected</li>
+            </ul>
+          </div>
+          <figure class="hero-shot">
+            <img
+              src="/assets/screenshots/web/iphone-1-play.png"
+              width="828"
+              height="1799"
+              alt="Feltzee dice game on iPhone: a 13-box scorecard above five dice on a green felt table, three dice held with yellow rings"
+              fetchpriority="high"
+            />
+          </figure>
+        </div>
+      </header>
+
+      <section class="download-strip" id="download" aria-label="Download">
+        <div class="wrap">
+          <p>
+            Free on the App Store for iPhone &amp; iPad
+            <span class="sub">iOS 17+ · 5.5 MB · No ads · No in-app payments to play</span>
+          </p>
+          <a class="badge" href="https://apps.apple.com/app/id6800955678">
+            <img
+              src="/assets/download-on-the-app-store.svg"
+              width="135"
+              height="45"
+              alt="Download Feltzee on the App Store"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="screenshots" aria-labelledby="screenshots-title">
+        <div class="wrap">
+          <p class="section-kicker">Screenshots</p>
+          <h2 class="section-title" id="screenshots-title">
+            One screen. Scorecard, dice, and your next move.
+          </h2>
+          <p class="section-lede">
+            The whole game fits on one portrait screen: no scrolling, no menus
+            between you and the next roll. Green felt in light and dark.
+          </p>
+          <div class="shots">
+            <figure>
+              <img
+                src="/assets/screenshots/web/iphone-1-play.png"
+                width="828"
+                height="1799"
+                loading="lazy"
+                alt="Playing Feltzee: full Yahtzee-style scorecard with dice held for a five of a kind attempt"
+              />
+              <figcaption>
+                Tap to hold. Every open box shows its potential score.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="/assets/screenshots/web/iphone-3-game-over.png"
+                width="828"
+                height="1799"
+                loading="lazy"
+                alt="Feltzee game over screen showing a new high score of 212 with options to save or share the scorecard"
+              />
+              <figcaption>
+                Finish a game, save a named score, share the scorecard.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="/assets/screenshots/web/iphone-4-high-scores.png"
+                width="828"
+                height="1799"
+                loading="lazy"
+                alt="Feltzee local high scores list showing a saved score with player name and date"
+              />
+              <figcaption>
+                A local top 10 with names, built for a shared family phone.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="/assets/screenshots/web/iphone-2-settings.png"
+                width="828"
+                height="1799"
+                loading="lazy"
+                alt="Feltzee settings screen with dice color choices and five-of-a-kind celebration options"
+              />
+              <figcaption>
+                Pick any dice color. Unlock new felt tables as you score higher.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="how-it-works" aria-labelledby="how-title">
+        <div class="wrap">
+          <p class="section-kicker">How It Works</p>
+          <h2 class="section-title" id="how-title">
+            Roll. Hold. Score. Thirteen boxes to fill.
+          </h2>
+          <p class="section-lede">
+            Classic five-dice rules, exactly as you remember them, including
+            the upper bonus, extra five-of-a-kind bonuses, and joker placement.
+          </p>
+          <div class="steps">
+            <div class="step">
+              <span class="step-num" aria-hidden="true">1</span>
+              <h3>Roll up to three times</h3>
+              <p>
+                Each turn starts with a fresh roll of five dice. You get up to
+                two re-rolls to chase the combination you want.
+              </p>
+            </div>
+            <div class="step">
+              <span class="step-num" aria-hidden="true">2</span>
+              <h3>Tap to hold your dice</h3>
+              <p>
+                Hold the keepers between rolls. Feltzee shows the potential
+                score in every open box, so you always know your best move.
+              </p>
+            </div>
+            <div class="step">
+              <span class="step-num" aria-hidden="true">3</span>
+              <h3>Fill the scorecard</h3>
+              <p>
+                Score each turn in one of 13 boxes: Aces through Chance, full
+                house, straights, and five of a kind. Chase the 35-point upper
+                bonus and beat the house high score.
+              </p>
+            </div>
+          </div>
+          <ul class="feature-list">
+            <li>Classic rules, including bonus five-of-a-kind and joker placement</li>
+            <li>In-progress games save automatically, so you can leave and pick up where you stopped</li>
+            <li>Shared top-10 high scores with editable names for family play</li>
+            <li>Optional Game Center Daily and All Time leaderboards</li>
+            <li>Unlock seven more felt tables at 200, 250, 300, 350, 400, 500, and 650 points</li>
+            <li>Haptics only, no sound; quiet enough for a waiting room</li>
+            <li>VoiceOver, Voice Control, and Reduced Motion supported</li>
+            <li>Zero data collected: no analytics, no tracking, no account</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="guides" aria-labelledby="guides-title">
+        <div class="wrap">
+          <p class="section-kicker">Guides</p>
+          <h2 class="section-title" id="guides-title">
+            Learn the game. Master the scorecard.
+          </h2>
+          <p class="section-lede">
+            Rules, scoring, and strategy for classic five-dice play, and how
+            each one works inside Feltzee.
+          </p>
+          <div class="guide-grid">
+            <a class="guide-card" href="/guides/how-to-play-yahtzee/">
+              <h3>How to Play Yahtzee: Rules for Beginners</h3>
+              <p>The complete rules of the classic five-dice game: rolls, holds, and all 13 scoring boxes.</p>
+              <span class="more">Read the guide →</span>
+            </a>
+            <a class="guide-card" href="/guides/yahtzee-score-sheet/">
+              <h3>The Yahtzee Score Sheet, Explained</h3>
+              <p>Every box on the scorecard, what it scores, and why you may never need a paper sheet again.</p>
+              <span class="more">Read the guide →</span>
+            </a>
+            <a class="guide-card" href="/guides/what-is-a-good-yahtzee-score/">
+              <h3>What Is a Good Yahtzee Score?</h3>
+              <p>Average scores, great scores, and the theoretical maximum, plus how to raise yours.</p>
+              <span class="more">Read the guide →</span>
+            </a>
+            <a class="guide-card" href="/guides/yahtzee-bonus-and-joker-rules/">
+              <h3>Second Yahtzee? Bonus &amp; Joker Rules</h3>
+              <p>The 100-point bonus and exactly where the joker roll must go, handled automatically in Feltzee.</p>
+              <span class="more">Read the guide →</span>
+            </a>
+            <a class="guide-card" href="/guides/yahtzee-full-house/">
+              <h3>Full House Rules and Points</h3>
+              <p>What counts as a full house, what it scores, and whether five of a kind qualifies.</p>
+              <span class="more">Read the guide →</span>
+            </a>
+            <a class="guide-card" href="/guides/small-straight-vs-large-straight/">
+              <h3>Small Straight vs. Large Straight</h3>
+              <p>What counts as each straight, what they score, and when to chase the extra 10 points.</p>
+              <span class="more">Read the guide →</span>
+            </a>
+            <a class="guide-card" href="/guides/yahtzee-upper-section-bonus/">
+              <h3>The 35-Point Upper Section Bonus</h3>
+              <p>Why 63 is the magic number and how to plan your upper section around it.</p>
+              <span class="more">Read the guide →</span>
+            </a>
+            <a class="guide-card" href="/guides/yahtzee-strategy/">
+              <h3>Yahtzee Strategy: How to Win</h3>
+              <p>When to re-roll, where to take zeros, and the habits that add 50+ points to your average.</p>
+              <span class="more">Read the guide →</span>
+            </a>
+            <a class="guide-card" href="/guides/play-yahtzee-by-yourself/">
+              <h3>Can You Play Yahtzee by Yourself?</h3>
+              <p>How solo play works, and why a high-score list makes it genuinely competitive.</p>
+              <span class="more">Read the guide →</span>
+            </a>
+            <a class="guide-card" href="/guides/offline-dice-games-no-wifi/">
+              <h3>Dice Games That Work Without Wifi</h3>
+              <p>What to look for in a truly offline dice game for flights, commutes, and dead zones.</p>
+              <span class="more">Read the guide →</span>
+            </a>
+            <a class="guide-card" href="/guides/yahtzee-app-without-ads/">
+              <h3>Finding a Yahtzee App Without Ads</h3>
+              <p>Why most free dice apps are full of ads, and what an ad-free one looks like.</p>
+              <span class="more">Read the guide →</span>
+            </a>
+            <a class="guide-card" href="/guides/pass-and-play-dice-games/">
+              <h3>Pass-and-Play: Dice Games on One Phone</h3>
+              <p>How to run a family dice night from a single shared phone, names and all.</p>
+              <span class="more">Read the guide →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+        <div class="wrap">
+          <p class="section-kicker">FAQ</p>
+          <h2 class="section-title" id="faq-title">Frequently asked questions</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>How do you play a Yahtzee-style dice game?</summary>
+              <div class="faq-a">
+                <p>
+                  Roll five dice up to three times per turn, holding any dice
+                  between rolls. After your last roll, score the dice in one of
+                  13 boxes: Aces through Sixes on top, combinations like full
+                  house, straights, and five of a kind below. The game ends when
+                  every box is filled.
+                </p>
+                <p><a href="/guides/how-to-play-yahtzee/">Learn more: How to Play Yahtzee →</a></p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What are the 13 boxes on a Yahtzee score sheet?</summary>
+              <div class="faq-a">
+                <p>
+                  Six upper boxes (Aces through Sixes) score the total of
+                  matching dice. Seven lower boxes cover 3 of a Kind, 4 of a
+                  Kind, Full House (25), Small Straight (30), Large Straight
+                  (40), 5 of a Kind (50), and Chance.
+                </p>
+                <p><a href="/guides/yahtzee-score-sheet/">Learn more: The Score Sheet, Explained →</a></p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What is a good Yahtzee score?</summary>
+              <div class="faq-a">
+                <p>
+                  Over 250 is a good casual score, 300+ is excellent, and 400+
+                  usually means multiple five-of-a-kinds. The theoretical
+                  maximum is 1,575. The 35-point upper bonus is the swing that
+                  decides most games.
+                </p>
+                <p><a href="/guides/what-is-a-good-yahtzee-score/">Learn more: What Is a Good Score? →</a></p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What happens if you roll a second five of a kind?</summary>
+              <div class="faq-a">
+                <p>
+                  If you already scored 50 in the five-of-a-kind box, each extra
+                  one is worth a 100-point bonus, and then the joker rules decide
+                  where the roll is placed. Feltzee applies both automatically.
+                </p>
+                <p><a href="/guides/yahtzee-bonus-and-joker-rules/">Learn more: Bonus &amp; Joker Rules →</a></p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>How many points is a full house?</summary>
+              <div class="faq-a">
+                <p>
+                  A full house (three of one number plus two of another) is
+                  always 25 points, regardless of which numbers show.
+                </p>
+                <p><a href="/guides/yahtzee-full-house/">Learn more: Full House Rules →</a></p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What's the difference between a small and large straight?</summary>
+              <div class="faq-a">
+                <p>
+                  A small straight is any run of four numbers and scores 30. A
+                  large straight is a run of all five dice and scores 40.
+                </p>
+                <p><a href="/guides/small-straight-vs-large-straight/">Learn more: Small vs. Large Straight →</a></p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>How do you get the 35-point upper bonus?</summary>
+              <div class="faq-a">
+                <p>
+                  Score 63 or more across the six upper boxes, the equivalent
+                  of three of each number. Feltzee shows your running progress
+                  toward 63 right on the scorecard.
+                </p>
+                <p><a href="/guides/yahtzee-upper-section-bonus/">Learn more: The Upper Section Bonus →</a></p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What's the best strategy to win?</summary>
+              <div class="faq-a">
+                <p>
+                  Bank Fives and Sixes early for the upper bonus, keep Chance as
+                  a safety net, take zeros in cheap boxes instead of wasting a
+                  good roll, and always chase five of a kind when three
+                  matching dice show up early.
+                </p>
+                <p><a href="/guides/yahtzee-strategy/">Learn more: Strategy Guide →</a></p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Can you play Yahtzee by yourself?</summary>
+              <div class="faq-a">
+                <p>
+                  Yes. Solo play is you against your own best score. Feltzee
+                  saves games mid-turn, keeps a local top 10, and offers
+                  optional Game Center Daily and All Time leaderboards.
+                </p>
+                <p><a href="/guides/play-yahtzee-by-yourself/">Learn more: Playing Solo →</a></p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Does Feltzee work offline, without wifi?</summary>
+              <div class="faq-a">
+                <p>
+                  Yes. No internet is required to play: flights, subways, and
+                  dead zones are fine. Game Center leaderboards are the only
+                  optional online feature.
+                </p>
+                <p><a href="/guides/offline-dice-games-no-wifi/">Learn more: Offline Dice Games →</a></p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Does Feltzee have ads or in-app purchases?</summary>
+              <div class="faq-a">
+                <p>
+                  No ads, no paywalls, no account, and no data collected. New
+                  felt tables unlock by scoring higher, not by paying.
+                </p>
+                <p><a href="/guides/yahtzee-app-without-ads/">Learn more: A Dice App Without Ads →</a></p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Can my family share one phone to play?</summary>
+              <div class="faq-a">
+                <p>
+                  Yes. Feltzee was built for a shared family phone. Finished
+                  games save to a local top 10 with each player's name, so you
+                  can pass the phone around the table.
+                </p>
+                <p><a href="/guides/pass-and-play-dice-games/">Learn more: Pass-and-Play →</a></p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-final" aria-labelledby="cta-title">
+        <div class="wrap">
+          <img
+            class="app-icon"
+            src="/assets/app-icon.png"
+            width="84"
+            height="84"
+            alt="Feltzee app icon"
+            loading="lazy"
+          />
+          <h2 id="cta-title">A quiet table in your pocket.</h2>
+          <p>
+            Pass the phone. Beat the house high score. Free, ad-free, offline,
+            and 5.5 MB, smaller than one photo.
+          </p>
+          <a class="badge" href="https://apps.apple.com/app/id6800955678">
+            <img
+              src="/assets/download-on-the-app-store.svg"
+              width="162"
+              height="54"
+              alt="Download Feltzee on the App Store"
+            />
+          </a>
+          <p class="cta-note">Requires iOS 17 or later · iPhone and iPad</p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="wrap">
+          <div class="footer-links">
+            <a href="/guides/">Guides</a>
+            <span class="sep" aria-hidden="true">·</span>
+            <a href="/play">Play</a>
+            <span class="sep" aria-hidden="true">·</span>
+            <a href="/support">Support</a>
+            <span class="sep" aria-hidden="true">·</span>
+            <a href="/privacy">Privacy</a>
+            <span class="sep" aria-hidden="true">·</span>
+            <a href="/press-kit">Press Kit</a>
+            <span class="sep" aria-hidden="true">·</span>
+            <a href="https://apps.apple.com/app/id6800955678">App Store</a>
+          </div>
+          <p class="footer-note">
+            © Loren Trevor Davies II. Yahtzee® is a registered trademark of
+            Hasbro, Inc. Feltzee is an independent app and is not affiliated
+            with, endorsed by, or sponsored by Hasbro.
+          </p>
+        </div>
       </footer>
     </div>
   </body>
