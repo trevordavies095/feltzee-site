@@ -1,1 +1,8 @@
+# Local planning / agent scratch
 .scratch/
+
+# macOS
+.DS_Store
+
+# Editor
+.cursor/
