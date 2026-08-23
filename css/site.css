@@ -221,6 +221,13 @@ main {
   padding-left: 0;
 }
 
+.press-icon {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 22%;
+}
+
 footer {
   display: flex;
   gap: 0.5rem;
