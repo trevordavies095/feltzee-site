@@ -471,6 +471,11 @@ footer a {
   justify-self: center;
 }
 
+.hero-shot picture,
+.shots picture {
+  display: block;
+}
+
 .hero-shot img {
   display: block;
   width: min(19rem, 78vw);
