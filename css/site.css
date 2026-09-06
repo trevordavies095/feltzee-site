@@ -67,6 +67,22 @@ main {
 
 .page-doc header {
   margin-bottom: 1.75rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.page-doc header .download-free {
+  flex-shrink: 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--felt-dark);
+  text-decoration: none;
+}
+
+.page-doc header .download-free:hover {
+  text-decoration: underline;
 }
 
 .page-home main {
