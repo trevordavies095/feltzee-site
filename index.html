@@ -69,9 +69,9 @@
         },
         "screenshot": [
           "https://feltzee.app/assets/screenshots/iphone-1-play.png",
-          "https://feltzee.app/assets/screenshots/iphone-2-settings.png",
+          "https://feltzee.app/assets/screenshots/iphone-2-mode-menu.png",
           "https://feltzee.app/assets/screenshots/iphone-3-game-over.png",
-          "https://feltzee.app/assets/screenshots/iphone-4-high-scores.png"
+          "https://feltzee.app/assets/screenshots/iphone-4-settings.png"
         ]
       }
     </script>
@@ -149,7 +149,7 @@
             "name": "Can you play Yahtzee by yourself?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Solo play means chasing your own best score across the 13 boxes. Feltzee is built for it: it saves your game mid-turn, keeps a local top-10 high score list, and offers optional Game Center Daily and All Time leaderboards."
+              "text": "Yes. Solo play means chasing your own best score across the 13 boxes. Feltzee is built for it: it saves your game mid-turn, tracks a Today's Dice streak, and offers optional Game Center leaderboards."
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Can my family share one phone to play?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Feltzee is built for a shared family phone. Finished games save to a local top-10 with each player's name, so you can pass the phone around the table and compete for the house high score."
+              "text": "Yes. Feltzee is built for a shared family phone. Pass the phone around the table and play the same 13-box card in six modes, with optional Game Center boards if you want a leaderboard."
             }
           }
         ]
@@ -208,9 +208,8 @@
           <div class="hero-copy">
             <h1>The classic five-dice game. Free, offline, and&nbsp;ad-free.</h1>
             <p class="hero-sub">
-              Feltzee is a Yahtzee-style dice game for iPhone and iPad. Roll,
-              hold, and fill the 13-box scorecard on a quiet green felt table.
-              No ads, no account, and no wifi required.
+              A daily puzzle plus other ways to play the same 13-box card on a
+              quiet green felt table. No ads, no account, and no wifi required.
             </p>
             <p class="hero-proof">
               <span class="stars" aria-hidden="true">★★★★★</span>
@@ -245,8 +244,8 @@
                 src="/assets/screenshots/web/iphone-1-play.jpg"
                 width="828"
                 height="1799"
-                alt="Feltzee dice game on iPhone: a 13-box scorecard above five white dice on a green felt table"
-                fetchpriority="high"
+                  alt="Feltzee Today's Dice on iPhone: in-progress 13-box scorecard with five dice and a 7-day streak on green felt"
+                  fetchpriority="high"
               />
             </picture>
           </figure>
@@ -292,11 +291,29 @@
                   width="828"
                   height="1799"
                   loading="lazy"
-                  alt="Playing Feltzee: full Yahtzee-style scorecard with five white dice, waiting to pick a score"
+                  alt="Feltzee Today's Dice in play: scorecard, five dice, and a 7-day streak caption on green felt"
                 />
               </picture>
               <figcaption>
-                Tap to hold. Every open box shows its potential score.
+                Today's Dice: everyone rolls the same dice today.
+              </figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="/assets/screenshots/web/iphone-2-mode-menu.webp"
+                />
+                <img
+                  src="/assets/screenshots/web/iphone-2-mode-menu.jpg"
+                  width="828"
+                  height="1799"
+                  loading="lazy"
+                  alt="Feltzee game mode menu open over play, listing Today's Dice, Classic, House, Down, Call, and Hand"
+                />
+              </picture>
+              <figcaption>
+                Six modes on the same card, from the dice button.
               </figcaption>
             </figure>
             <figure>
@@ -310,54 +327,75 @@
                   width="828"
                   height="1799"
                   loading="lazy"
-                  alt="Feltzee game over screen showing a new high score of 176 with options to save or share the scorecard"
+                  alt="Feltzee Today's Dice game over sheet with final score and a 7-day streak"
                 />
               </picture>
               <figcaption>
-                Finish a game, save a named score, share the scorecard.
+                Finish Today's Dice and see your streak.
               </figcaption>
             </figure>
             <figure>
               <picture>
                 <source
                   type="image/webp"
-                  srcset="/assets/screenshots/web/iphone-4-high-scores.webp"
+                  srcset="/assets/screenshots/web/iphone-4-settings.webp"
                 />
                 <img
-                  src="/assets/screenshots/web/iphone-4-high-scores.jpg"
+                  src="/assets/screenshots/web/iphone-4-settings.jpg"
                   width="828"
                   height="1799"
                   loading="lazy"
-                  alt="Feltzee local high scores list showing a saved score with player name and date"
+                  alt="Feltzee settings showing unlockable felt tables with Ember unlocked and Forge locked at a 30-day streak"
                 />
               </picture>
               <figcaption>
-                A local top 10 with names, built for a shared family phone.
-              </figcaption>
-            </figure>
-            <figure>
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset="/assets/screenshots/web/iphone-2-settings.webp"
-                />
-                <img
-                  src="/assets/screenshots/web/iphone-2-settings.jpg"
-                  width="828"
-                  height="1799"
-                  loading="lazy"
-                  alt="Feltzee settings with dice colors, unlockable felt tables, and five-of-a-kind celebration options"
-                />
-              </picture>
-              <figcaption>
-                Pick any dice color. Unlock new felt tables as you score higher.
+                Score unlocks tables. Streak unlocks Ember and Forge.
               </figcaption>
             </figure>
           </div>
         </div>
       </section>
 
-      <section class="section section-alt" id="how-it-works" aria-labelledby="how-title">
+      <section class="section section-alt" id="game-modes" aria-labelledby="modes-title">
+        <div class="wrap">
+          <p class="section-kicker">Game Modes</p>
+          <h2 class="section-title" id="modes-title">
+            Six ways to play the same card.
+          </h2>
+          <p class="section-lede">
+            Switch from the dice button. Names and short lines match the in-app
+            menu.
+          </p>
+          <div class="mode-grid">
+            <div class="mode-card">
+              <h3>Today's Dice</h3>
+              <p>Everyone rolls the same dice today.</p>
+            </div>
+            <div class="mode-card">
+              <h3>Classic</h3>
+              <p>Matching upper first for an extra 5 of a Kind</p>
+            </div>
+            <div class="mode-card">
+              <h3>House</h3>
+              <p>Extra 5 of a Kind can go in any open box.</p>
+            </div>
+            <div class="mode-card">
+              <h3>Down</h3>
+              <p>Fill the card from the top.</p>
+            </div>
+            <div class="mode-card">
+              <h3>Call</h3>
+              <p>Name the box after the first roll.</p>
+            </div>
+            <div class="mode-card">
+              <h3>Hand</h3>
+              <p>One roll. Fill a box.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how-it-works" aria-labelledby="how-title">
         <div class="wrap">
           <p class="section-kicker">How It Works</p>
           <h2 class="section-title" id="how-title">
@@ -390,16 +428,17 @@
               <p>
                 Score each turn in one of 13 boxes: Aces through Chance, full
                 house, straights, and five of a kind. Chase the 35-point upper
-                bonus and beat the house high score.
+                bonus and beat your best Classic score.
               </p>
             </div>
           </div>
           <ul class="feature-list">
             <li>Classic rules, including bonus five-of-a-kind and joker placement</li>
             <li>In-progress games save automatically, so you can leave and pick up where you stopped</li>
-            <li>Shared top-10 high scores with editable names for family play</li>
-            <li>Optional Game Center Daily and All Time leaderboards</li>
+            <li>Six modes on the same card, including Today's Dice</li>
+            <li>Optional Game Center leaderboards when you opt in</li>
             <li>Unlock seven more felt tables at 200, 250, 300, 350, 400, 500, and 650 points</li>
+            <li>Ember and Forge unlock from a Today's Dice streak of 7 and 30</li>
             <li>Haptics only, no sound; quiet enough for a waiting room</li>
             <li>VoiceOver, Voice Control, and Reduced Motion supported</li>
             <li>Zero data collected: no analytics, no tracking, no account</li>
@@ -407,7 +446,7 @@
         </div>
       </section>
 
-      <section class="section" id="guides" aria-labelledby="guides-title">
+      <section class="section section-alt" id="guides" aria-labelledby="guides-title">
         <div class="wrap">
           <p class="section-kicker">Guides</p>
           <h2 class="section-title" id="guides-title">
@@ -482,7 +521,7 @@
         </div>
       </section>
 
-      <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+      <section class="section" id="faq" aria-labelledby="faq-title">
         <div class="wrap">
           <p class="section-kicker">FAQ</p>
           <h2 class="section-title" id="faq-title">Frequently asked questions</h2>
@@ -583,8 +622,8 @@
               <div class="faq-a">
                 <p>
                   Yes. Solo play is you against your own best score. Feltzee
-                  saves games mid-turn, keeps a local top 10, and offers
-                  optional Game Center Daily and All Time leaderboards.
+                  saves games mid-turn, tracks a Today's Dice streak, and offers
+                  optional Game Center leaderboards.
                 </p>
                 <p><a href="/guides/play-yahtzee-by-yourself/">Learn more: Playing Solo →</a></p>
               </div>
@@ -614,9 +653,10 @@
               <summary>Can my family share one phone to play?</summary>
               <div class="faq-a">
                 <p>
-                  Yes. Feltzee was built for a shared family phone. Finished
-                  games save to a local top 10 with each player's name, so you
-                  can pass the phone around the table.
+                  Yes. Feltzee was built for a shared family phone. Pass the
+                  phone around the table and play the same 13-box card in six
+                  modes, with optional Game Center boards if you want a
+                  leaderboard.
                 </p>
                 <p><a href="/guides/pass-and-play-dice-games/">Learn more: Pass-and-Play →</a></p>
               </div>
@@ -637,8 +677,8 @@
           />
           <h2 id="cta-title">A quiet table in your pocket.</h2>
           <p>
-            Pass the phone. Beat the house high score. Free, ad-free, offline,
-            and 5.5 MB, smaller than one photo.
+            Pass the phone. Play Today's Dice or another mode. Free, ad-free,
+            offline, and 5.5 MB, smaller than one photo.
           </p>
           <a class="badge" href="https://apps.apple.com/app/id6800955678">
             <img
