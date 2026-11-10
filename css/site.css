@@ -284,7 +284,7 @@ main {
   display: block;
   width: 120px;
   height: 120px;
-  border-radius: 22%;
+  border-radius: 26.7%;
 }
 
 footer {
@@ -354,7 +354,7 @@ footer a {
 .nav-brand img {
   width: 30px;
   height: 30px;
-  border-radius: 22%;
+  border-radius: 26.7%;
 }
 
 .nav-links {
@@ -885,7 +885,7 @@ footer a {
 .cta-final .app-icon {
   width: 84px;
   height: 84px;
-  border-radius: 22%;
+  border-radius: 26.7%;
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
 }
 
